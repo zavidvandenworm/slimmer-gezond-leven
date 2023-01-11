@@ -1,0 +1,16 @@
+html >*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 15px;
+}
+
+#container {
+    display: block;
+    background-color: cornsilk;
+    width: 2rem;
+    height: 4rem;
+}
