@@ -4,10 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
     <title>Slimmer Gezond Leven</title>
 </head>
 <body>
     <div id="container">
+        <iframe id="pageview" src="./assets/pages/homepagina.html"></iframe>
+        <div id="navigation">
+            <button class="navbutton" id="homepage">
+                <span class="material-symbols-rounded">home</span>
+            </button>
+            <button class="navbutton" id="exercises">
+                <span class="material-symbols-rounded">fitness_center</span>
+            </button>
+            <button class="navbutton" id="friends">
+                <span class="material-symbols-rounded">groups</span>
+            </button>
+            <button class="navbutton" id="profile">
+                <span class="material-symbols-rounded">person</span>
+            </button>
+        </div>
     </div>
 </body>
 </html>
+
+<script>
+    let pageview = document.getElementById("pageview");
+    document.getElementById("homepage").onclick = function() {
+        pageview.src = "./assets/pages/homepagina.html";
+    }
+    document.getElementById("profile").onclick = function() {
+        pageview.src = "./assets/pages/profiel.html";
+    }
+    document.getElementById("friends").onclick = function() {
+        pageview.src = "./assets/pages/vrienden.html";
+    }
+    document.getElementById("exercises").onclick = function() {
+        pageview.src = "./assets/pages/oefeningen.html";
+    }
+</script>
