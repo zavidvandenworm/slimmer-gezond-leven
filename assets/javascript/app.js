@@ -5,6 +5,14 @@ document.getElementById("keuzepagina").onclick = function() {
 document.getElementById("homepage").onclick = function() {
     pageview.src = "./assets/pages/homepagina.html";
 }
+document.getElementById("recepten").onclick = function() {
+    pageview.src = "./assets/pages/recepten.html";
+}
+
+
+
+
+
 document.getElementById("profile").onclick = function() {
     if(localStorage.getItem("sgl_loggedin") === null) {
         pageview.src = "./assets/pages/accountaanmaken.html";
