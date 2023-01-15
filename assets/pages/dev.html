@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dev</title>
+</head>
+<body>
+    <button id="localstorage-refresh">refresh</button>
+    <button id="localstorage-reset">reset</button>
+    <textarea readonly id="localstorage-view">
+    </textarea>
+</body>
+</html>
+
+<style>
+    #localstorage-view {
+        width: 100%;
+        height: 15rem;
+    }
+</style>
+
+<script>
+    function ls() {
+        let ls = "";
+        const items = { ...localStorage };
+        for(i in items) {
+            if(i.slice(0, 3) == "sgl"){
+                ls += i + ": " + localStorage.getItem(i) +"\n";
+            }
+        }
+        document.getElementById("localstorage-view").innerHTML = ls;
+    }
+    function resetvars() {
+        const items = { ...localStorage };
+        for(i in items) {
+            if(i.slice(0, 3) == "sgl"){
+                localStorage.removeItem(i);
+            }
+        }
+        document.getElementById("localstorage-view").innerHTML = "alle vars zijn verwijderd";
+    }
+    document.getElementById("localstorage-refresh").onclick = ls;
+    document.getElementById("localstorage-reset").onclick = resetvars;
+</script>
+
+<script src="../javascript/data.js"></script>

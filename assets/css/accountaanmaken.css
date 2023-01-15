@@ -1,0 +1,21 @@
+#accountform {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#accountform #tablecenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+}
+
+#accountform button {
+    display: block;
+    text-align: center;
+    background-color: rgba(0,0,0,0.1);
+    cursor: pointer;
+}
