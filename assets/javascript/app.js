@@ -1,6 +1,6 @@
 let pageview = document.getElementById("pageview");
-document.getElementById("homepagereal").onclick = function() {
-    pageview.src = "./assets/pages/homepagina_beter.html";
+document.getElementById("keuzepagina").onclick = function() {
+    pageview.src = "./assets/pages/keuzepagina.html";
 }
 document.getElementById("homepage").onclick = function() {
     pageview.src = "./assets/pages/homepagina.html";
