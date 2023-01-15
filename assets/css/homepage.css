@@ -1,0 +1,31 @@
+#slimmer_text{
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.3rem;
+  margin-top: 100px;
+}
+
+#login_text{
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.3rem;
+  margin-top: 120px;
+}
+
+#buttons_home{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+#leerling_inlog{
+  margin-right: 25px;
+}
+
+#leerkracht_inlog{
+
+}
