@@ -23,9 +23,50 @@
 }
 
 #leerling_inlog{
-  margin-right: 25px;
+  margin-right: 35px;
+  height: 35px;
+  color: black;
+  background-color: rgb(251 115 115);
+  border-radius: 25px;
+  border-width: 1px;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  padding-left: 16.7px;
+  padding-right: 16.7px;
+  background-image: linear-gradient(45deg, #bf6ec7, transparent);
+}
+
+
+#leerling_inlog:hover{
+  opacity: 0.8;
+  cursor: pointer;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, .6);
+}
+
+#leerling_inlog:active{
+  opacity: .5;
+
 }
 
 #leerkracht_inlog{
+  height: 35px;
+  color: black;
+  background-color: rgb(251 115 115);
+  border-radius: 25px;
+  border-width: 1px;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  padding-left: 8.5px;
+  padding-right: 8.5px;
+  background-image: linear-gradient(45deg, #bf6ec7, transparent);
+}
 
+#leerkracht_inlog:hover{
+  opacity: 0.8;
+  cursor: pointer;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, .6);
+}
+
+#leerkracht_inlog:active{
+  opacity: .5;
 }
