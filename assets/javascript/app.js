@@ -8,11 +8,6 @@ document.getElementById("homepage").onclick = function() {
 document.getElementById("recepten").onclick = function() {
     pageview.src = "./assets/pages/recepten.html";
 }
-document.getElementById("ontbijt_button").onclick = function() {
-    pageview.src = "./assets/pages/pages_recepten.html";
-}
-
-
 
 
 
