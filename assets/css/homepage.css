@@ -22,6 +22,7 @@
   margin-top: 50px;
 }
 
+/*
 #leerling_inlog{
   margin-right: 35px;
   height: 35px;
@@ -35,7 +36,6 @@
   padding-right: 16.7px;
   background-image: linear-gradient(45deg, #bf6ec7, transparent);
 }
-
 
 #leerling_inlog:hover{
   opacity: 0.8;
@@ -70,3 +70,29 @@
 #leerkracht_inlog:active{
   opacity: .5;
 }
+
+*/
+
+.button_homepagina {
+  cursor: pointer;
+  color: black;
+  border-radius: 0.85rem;
+  border-width: 0;
+  border-style: solid;
+  font-family: 'Lato';
+  font-weight: 100;
+  padding: 0.65rem 1rem 0.65rem;
+  margin: 0 0.5rem 0;
+  background: none;
+  filter: drop-shadow(0 0 .5rem rgba(0,0,0,0.15));
+}
+
+#leerling_inlog {
+  background-color: rgb(248, 248, 248);
+}
+
+#leerkracht_inlog {
+  background-color: rgb(15, 15, 15);
+  color: whitesmoke;
+}
+
