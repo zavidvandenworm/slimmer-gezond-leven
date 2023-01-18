@@ -23,10 +23,10 @@ body {
     display: flex;
     flex-direction: column;
     background-color: #ffb6d2;
-    background-image: linear-gradient(45deg, rgb(251 115 115), transparent);
     width: 20rem;
     height: 40rem;
     border-radius: 0.4rem;
+	background-color: #00000c;
 }
 
 #ding {

@@ -4,8 +4,6 @@ html, body {
 }
 
 #keuzepaneel {
-    margin-top: .5rem;
-    padding: .5rem;
     display: flex;
     align-items: stretch;
     justify-content: center;
@@ -14,8 +12,8 @@ html, body {
 }
 
 #keuzepaneel button {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: bold;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 200;
     text-transform: uppercase;
     display: flex !important;
     flex-direction: column;
@@ -23,11 +21,13 @@ html, body {
     justify-content: center;
     background: none;
     border: none;
+    border-radius: 0.4rem;
     display: block;
-    margin: .1rem .1rem .1rem;
+    margin: 0.1rem 0.1rem 0.1rem;
     flex: 48%;
     text-shadow: 0 0 3rem rgb(0 0 0 / 50%);
     cursor: pointer;
+    color: rgb(0 251 251);
 }
 
 #keuzepaneel button:hover {
