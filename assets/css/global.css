@@ -68,3 +68,11 @@ body {
     font-size: 2rem;
     text-align: center;
 }
+
+.pagetitle{
+    display: flex;
+    color: rgb(0 251 251);
+    font-family: 'Lato', sans-serif;
+    justify-content: center;
+  
+  }

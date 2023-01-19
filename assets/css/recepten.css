@@ -13,145 +13,38 @@
   justify-content: center;
   margin-top: 120px;
 }
+ 
+#recepten_head{
+  color: rgb(0 251 251);
+}
 
+.recepten_buttons{
+  height: 35px;
+  color: black;
+  background-color: rgb(0 251 251);
+  border-radius: 25px;
+  border-width: 1px;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  padding-left: 8.5px;
+  padding-right: 8.5px;
+  width: 83px;
+}
+
+.recepten_buttons:hover{
+  color: rgb(0 251 251);
+  background-color: black;
+  cursor: pointer;
+}
 
 #ontbijt_button{
-  margin-right: 50px;
-  height: 35px;
-  color: black;
-  background-color: rgb(251 115 115);
-  border-radius: 25px;
-  border-width: 1px;
-  font-family: 'Lato', sans-serif;
-  font-weight: bold;
-  padding-left: 16.7px;
-  padding-right: 16.7px;
-  background-image: linear-gradient(45deg, #bf6ec7, transparent);
-}
-
-#ontbijt_button:hover{
-  opacity: 0.8;
-  cursor: pointer;
-  box-shadow: 0 5px 5px rgba(0, 0, 0, .6);
-}
-
-#ontbijt_button:active{
-  opacity: .5;
-}
-
-#lunch_button{
-  height: 35px;
-  color: black;
-  background-color: rgb(251 115 115);
-  border-radius: 25px;
-  border-width: 1px;
-  font-family: 'Lato', sans-serif;
-  font-weight: bold;
-  padding-left: 16.7px;
-  padding-right: 16.7px;
-  background-image: linear-gradient(45deg, #bf6ec7, transparent);
-}
-
-#lunch_button:hover{
-  opacity: 0.8;
-  cursor: pointer;
-  box-shadow: 0 5px 5px rgba(0, 0, 0, .6);
-}
-
-#lunch_button:active{
-  opacity: .5;
+  margin-right: 35px;
 }
 
 #avond_eten_button{
-  margin-right: 50px;
-  height: 35px;
-  color: black;
-  background-color: rgb(251 115 115);
-  border-radius: 25px;
-  border-width: 1px;
-  font-family: 'Lato', sans-serif;
-  font-weight: bold;
-  padding-left: 16.7px;
-  padding-right: 16.7px;
-  background-image: linear-gradient(45deg, #bf6ec7, transparent);
-}
-
-#avond_eten_button:hover{
-  opacity: 0.8;
-  cursor: pointer;
-  box-shadow: 0 5px 5px rgba(0, 0, 0, .6);
-}
-
-#avond_eten_button:active{
-  opacity: .5;
-}
-
-#snacks_button{
-  height: 35px;
-  color: black;
-  background-color: rgb(251 115 115);
-  border-radius: 25px;
-  border-width: 1px;
-  font-family: 'Lato', sans-serif;
-  font-weight: bold;
-  padding-left: 16.7px;
-  padding-right: 16.7px;
-  background-image: linear-gradient(45deg, #bf6ec7, transparent);
-}
-#snacks_button:hover{
-  opacity: 0.8;
-  cursor: pointer;
-  box-shadow: 0 5px 5px rgba(0, 0, 0, .6);
-}
-
-#snacks_button:active{
-  opacity: .5;
+  margin-right: 35px;
 }
 
 #desserts_button{
-  margin-right: 50px;
-  height: 35px;
-  color: black;
-  background-color: rgb(251 115 115);
-  border-radius: 25px;
-  border-width: 1px;
-  font-family: 'Lato', sans-serif;
-  font-weight: bold;
-  padding-left: 16.7px;
-  padding-right: 16.7px;
-  background-image: linear-gradient(45deg, #bf6ec7, transparent);
-}
-
-#desserts_button:hover{
-  opacity: 0.8;
-  cursor: pointer;
-  box-shadow: 0 5px 5px rgba(0, 0, 0, .6);
-}
-
-#desserts_button:active{
-  opacity: .5;
-}
-
-
-#bakken_button{
-  height: 35px;
-  color: black;
-  background-color: rgb(251 115 115);
-  border-radius: 25px;
-  border-width: 1px;
-  font-family: 'Lato', sans-serif;
-  font-weight: bold;
-  padding-left: 16.7px;
-  padding-right: 16.7px;
-  background-image: linear-gradient(45deg, #bf6ec7, transparent);
-}
-
-#bakken_button:hover{
-  opacity: 0.8;
-  cursor: pointer;
-  box-shadow: 0 5px 5px rgba(0, 0, 0, .6);
-}
-
-#bakken_button:active{
-  opacity: .5;
+  margin-right: 35px;
 }
