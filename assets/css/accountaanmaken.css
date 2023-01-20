@@ -12,6 +12,7 @@ body > * {
 
 #accountform #tablecenter {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -51,7 +52,15 @@ body > * {
 	border-radius: .25rem;
 }
 
-#login-form-table {
+.login-form-table {
     width: 100%;
     padding: 0 1rem;
 }
+
+.login-form-header {
+    color: rgb(200,200,200);
+    background-color: rgba(245,245,245, 0.25);
+    padding: .1rem .5rem;
+    border-radius: .25rem;
+}
+
