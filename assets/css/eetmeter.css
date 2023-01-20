@@ -1,0 +1,6 @@
+#eetmeter_text{
+	display: flex;
+	color: rgb(0, 251, 251);  
+	flex-direction: column;
+    align-items: center;
+}
