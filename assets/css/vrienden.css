@@ -1,0 +1,31 @@
+#vrienden_div1{
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+
+}
+
+#vrienden_div2{
+  display: flex;
+  justify-content: center;
+}
+
+.buttons_vrienden{
+  height: 35px;
+  color: black;
+  background-color: rgb(0 251 251);
+  border-radius: 25px;
+  border-width: 1px;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  padding-left: 8.5px;
+  padding-right: 8.5px;
+  width: 150px;
+}
+
+.buttons_vrienden:hover{
+  color: rgb(0 251 251);
+  background-color: black;
+  cursor: pointer;
+}
