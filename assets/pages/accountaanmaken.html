@@ -16,16 +16,17 @@
             <table>
                 <tr>
                     <td>Naam</td>
-                    <td><input type="text" name="username"></td>
+                    <td class="login-input"><input type="text" name="username" class="login-input" required="true"></td>
                 </tr>
                 <tr>
                     <td>Geboortedatum</td>
-                    <td><input type="date" name="userbirthday"></td>
+                    <td><input type="date" name="userbirthday" class="login-input" required="true"></td>
                 </tr>
                 <tr>
                     <td>School</td>
                     <td>
-                        <select name="userschool">  
+                        <select name="userschool" class="login-input" required="true">
+							<option value="" disabled selected>Kies je school...</option>
                             <option>Graaf Huyn College</option>  
                             <option>Graaf Huyn College v2</option>
                         </select>  
@@ -33,7 +34,10 @@
                 </tr>
             </table>
         </div>
-        <button>Aanmaken</button>
+		<hr width="85%">
+        <button id="submit-form">Aanmaken</button>
     </form>
 </body>
 </html>
+
+<script src="../javascript/accountaanmaken.js"></script>

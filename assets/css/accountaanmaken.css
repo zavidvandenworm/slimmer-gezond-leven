@@ -1,3 +1,8 @@
+body > * {
+	color: rgb(245,245,245);
+	font-family: arial;
+}
+
 #accountform {
     display: flex;
     flex-direction: column;
@@ -18,4 +23,23 @@
     text-align: center;
     background-color: rgba(0,0,0,0.1);
     cursor: pointer;
+}
+
+#accountform > input {
+	width: 20rem;
+}
+
+.login-input {
+	border: none;
+	padding: .1rem;
+	margin: 0;
+	width: 100%;
+}
+
+#submit-form {
+	color: white;
+	background-color: rgb(245,245,245) !important;
+	padding: .35rem;
+	color: black;
+	border-radius: .25rem;
 }
