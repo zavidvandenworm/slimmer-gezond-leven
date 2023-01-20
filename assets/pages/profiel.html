@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/profiel.css">
     <title>Profiel</title>
 </head>
 <body>
@@ -13,8 +14,8 @@
         <div id="pfp-name">
             <img id="profile-card-pfp" src="../image/blank.gif">
             <div id="name-join">
-                <b>Voorbeeld Naam</b>
-                <small>Lid sinds 13 januari 2023</small>
+                <b id="user_name_display">Voorbeeld Naam</b>
+                <small>Lid sinds <span id="user_joindate_display"></span></small>
             </div>
         </div>
     </div>
@@ -24,8 +25,5 @@
 </body>
 </html>
 
-<script>
-    if(localStorage.getItem("sgl_loggedin") === null) {
-        
-    }
+<script src="../javascript/profiel.js">
 </script>

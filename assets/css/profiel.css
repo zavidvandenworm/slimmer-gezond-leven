@@ -1,0 +1,39 @@
+#profile-card {
+    display: flex;
+    box-sizing: border-box;
+    margin: .5rem;
+    padding: .5rem;
+    border-radius: .7rem;
+    background-color: rgba(255,255,255,0.3);
+}
+
+#profile-card-pfp {
+    width: 4rem;
+    height: 4rem;
+    margin-right: 1rem;
+    border-radius: 50%;
+    background-color: gray;
+    border: none !important;
+    outline: none !important;
+}
+
+#name-join {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#pfp-name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#pfp-name #name-join b {
+    font-family: 'Lato', sans-serif;
+}
+
+#pfp-name #name-join small {
+    font-family: 'Lato', sans-serif;
+}
