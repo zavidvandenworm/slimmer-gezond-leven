@@ -10,28 +10,76 @@
 </head>
 <body>
     <h1 class="title-large">Account aanmaken</h1>
-    <hr color="black">
     <form method="get" id="accountform">
         <div id="tablecenter">
-            <table>
-                <tr>
-                    <td>Naam</td>
-                    <td class="login-input"><input type="text" name="username" class="login-input" required="true"></td>
-                </tr>
-                <tr>
-                    <td>Geboortedatum</td>
-                    <td><input type="date" name="userbirthday" class="login-input" required="true"></td>
+            <table class="login-form-table">
+                <tr >
+                    <td><span class="login-form-header">Je school</span></td>
                 </tr>
                 <tr>
                     <td>School</td>
-                    <td>
-                        <select name="userschool" class="login-input" required="true">
-							<option value="" disabled selected>Kies je school...</option>
-                            <option>Graaf Huyn College</option>  
-                            <option>Graaf Huyn College v2</option>
+                    <td class="login-td">
+                        <select name="sgl_school" class="login-input" required="true">
+							<option value="" disabled selected>Maak een keuze</option>
+                            <option>Graaf Huyn</option>  
+                            <option>Graaf Huyn v2</option>
                         </select>  
                     </td>
                 </tr>
+                <tr>
+                    <td>Klascode</td>
+                    <td class="login-td"><input type="text" name="sgl_classcode" class="login-input" required="true"></td>
+                </tr>
+            </table><br>
+            <table class="login-form-table">
+                <tr>
+                    <td><span class="login-form-header">Basisinformatie</span></td>
+                </tr>
+                <tr>
+                    <td>Naam</td>
+                    <td class="login-td"><input type="text" name="sgl_name" class="login-input" required="true"></td>
+                </tr>
+                <tr>
+                    <td>Geboortedatum</td>
+                    <td class="login-td"><input type="date" name="sgl_birthday" class="login-input" required="true"></td>
+                </tr>
+                <tr>
+                    <td>Geslacht</td>
+                    <td class="login-td">
+                        <select name="sgl_gender" class="login-input" required="true">
+							<option value="" disabled selected>Maak een keuze</option>
+                            <option>Man</option>  
+                            <option>Vrouw</option>
+                            <option>Anders</option>
+                        </select>  
+                    </td>
+                </tr>
+                <tr>
+                    <td>Gewicht</td>
+                    <td class="login-td"><input type="number" name="sgl_weight" class="login-input" required="true"></td>
+                </tr>
+                <tr>
+                    <td style="font-size: .9rem;">Trainingintensiteit</td>
+                    <td class="login-td">
+                        <select name="sgl_trainingintensity" class="login-input" required="true">
+							<option value="" disabled selected>Maak een keuze</option>
+                            <option value="1">Licht</option>  
+                            <option value="2">Middel</option>
+                            <option value="3">Intens</option>
+                        </select>  
+                    </td>                </tr>
+            </table><br>
+            <table class="login-form-table">
+                <tr>
+                    <td><span class="login-form-header">Doelen</span></td>                </tr>
+                    <tr>
+                        <td>Gewicht</td>
+                        <td class="login-td"><input type="number" name="sgl_idealweight" class="login-input" required="true"></td>
+                    </tr>
+                    <tr>
+                        <td>Calorieën (p. dag)</td>
+                        <td class="login-td"><input type="number" name="sgl_dailycalories" class="login-input" required="true"></td>
+                    </tr>
             </table>
         </div>
 		<hr width="85%">

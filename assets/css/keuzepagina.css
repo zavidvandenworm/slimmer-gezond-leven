@@ -20,7 +20,7 @@ html, body {
     align-items: center;
     justify-content: center;
     background: none;
-    border: none;
+    border: solid .1rem transparent;
     border-radius: 0.4rem;
     display: block;
     margin: 0.1rem 0.1rem 0.1rem;
@@ -30,9 +30,18 @@ html, body {
     color: rgb(0 251 251);
 }
 
+#keuzepaneel button span {
+    transition: transform 150ms;
+}
+
 #keuzepaneel button:hover {
     /*background-color: rgba(255,255,255,0.1);*/
-	background-image: radial-gradient(ellipse at 50% 50%, rgba(255,255,255,0.1), transparent 80%);
+    border: solid .1rem rgba(255,255,255,0.1);
+	background-image: radial-gradient(ellipse at 50% 80%, rgba(255,255,255,0.15), transparent 80%);
+}
+
+#keuzepaneel button:hover span {
+    transform: translateY(-.35rem);
 }
 
 #keuzepaneel button span {
