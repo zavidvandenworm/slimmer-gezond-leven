@@ -10,21 +10,20 @@
 </head>
 <body>
     <h1 class="title-large">Account aanmaken</h1>
-    <hr color="black">
     <form method="get" id="accountform">
         <div id="tablecenter">
-            <table>
+            <table id="login-form-table">
                 <tr>
                     <td>Naam</td>
-                    <td class="login-input"><input type="text" name="username" class="login-input" required="true"></td>
+                    <td class="login-td"><input type="text" name="username" class="login-input" required="true"></td>
                 </tr>
                 <tr>
                     <td>Geboortedatum</td>
-                    <td><input type="date" name="userbirthday" class="login-input" required="true"></td>
+                    <td class="login-td"><input type="date" name="userbirthday" class="login-input" required="true"></td>
                 </tr>
                 <tr>
                     <td>School</td>
-                    <td>
+                    <td class="login-td">
                         <select name="userschool" class="login-input" required="true">
 							<option value="" disabled selected>Kies je school...</option>
                             <option>Graaf Huyn College</option>  
