@@ -39,6 +39,10 @@
   cursor: pointer;
 }
 
+.recepten_buttons:active{
+  opacity: .6;
+}
+
 #ontbijt_button{
   margin-right: 35px;
 }
