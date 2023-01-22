@@ -47,9 +47,18 @@ body > * {
 #submit-form {
 	color: white;
 	background-color: rgb(245,245,245) !important;
-	padding: .35rem;
+	padding: .45rem;
 	color: black;
-	border-radius: .25rem;
+	border-radius: 25px;
+
+}
+
+#submit-form:hover{
+    opacity: .8;
+}
+
+#submit-form:active{
+    opacity: .6;
 }
 
 .login-form-table {

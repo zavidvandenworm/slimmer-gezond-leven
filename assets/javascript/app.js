@@ -17,6 +17,10 @@ document.getElementById("page_debug").onclick = function() {
 	pageview.contentWindow.location = "./assets/pages/dev.html";
 }
 
+document.getElementById("home1").onclick = function() {
+	pageview.contentWindow.location = "./assets/pages/homepagina.html";
+}
+
 document.getElementById("page_createaccount").onclick = function() {
 	if(localStorage.getItem("sgl_loggedin") === null) {
 		pageview.contentWindow.location = "./assets/pages/accountaanmaken.html";
