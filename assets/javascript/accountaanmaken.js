@@ -21,6 +21,7 @@ function processForm(e) {
     localStorage.setItem("sgl_joindate", date);
     localStorage.setItem("sgl_loggedin", "true");
 
+    location.href = "./profiel.html";
     return false;
 }
 
