@@ -1,0 +1,43 @@
+#text_sporten1{
+  margin-top: 50px;
+  display: flex;
+}
+
+
+.text_sportschool{
+	display: flex;
+	color: rgb(0, 251, 251);  
+	font-family: 'Lato', sans-serif;
+}
+
+
+.inschrijven_button{
+  justify-content: center;
+  height: 35px;
+  color: black;
+  background-color: rgb(0 251 251);
+  border-radius: 25px;
+  border-width: 1px;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  padding-left: 8.5px;
+  padding-right: 8.5px;
+  width: 83px;
+  margin-top: 20px;
+}
+
+.inschrijven_button:hover{
+  color: rgb(0 251 251);
+  background-color: black;
+  cursor: pointer;
+}
+
+.inschrijven_button:active{
+  opacity: .6;
+}
+
+#text_voedingslessen2{
+  margin-top: 50px;
+  display: flex;
+}
+

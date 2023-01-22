@@ -30,6 +30,10 @@ html, body {
     color: rgb(0 251 251);
 }
 
+#keuzepaneel button:active{
+    opacity: .6;
+}
+
 #keuzepaneel button span {
     transition: transform 150ms;
 }
