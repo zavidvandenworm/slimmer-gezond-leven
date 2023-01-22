@@ -12,4 +12,5 @@ if(localStorage.getItem("sgl_loggedin") === null) {
     localStorage.setItem("sgl_trainingintensity", "N/A");
     localStorage.setItem("sgl_idealweight", "N/A");
     localStorage.setItem("sgl_dailycalories", "N/A");
+    localStorage.setItem("sgl_joindate", "N/A");
 }
