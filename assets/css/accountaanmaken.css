@@ -44,20 +44,18 @@ body > * {
     width: 9.5rem;
 }
 
-#submit-form {
+.form-button {
 	color: white;
 	background-color: rgb(245,245,245) !important;
 	padding: .45rem;
 	color: black;
-	border-radius: 25px;
-
+	border-radius: .8rem;
 }
-
-#submit-form:hover{
+.form-button:hover{
     opacity: .8;
 }
 
-#submit-form:active{
+.form-button:active{
     opacity: .6;
 }
 

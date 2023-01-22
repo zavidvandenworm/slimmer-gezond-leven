@@ -1,3 +1,7 @@
+html > * {
+	box-sizing: border-box;
+}
+
 #eetmeter_text{
 	display: flex;
 	color: rgb(0, 251, 251);  
@@ -20,3 +24,49 @@
 }
 
 
+.goal_card {
+	margin: 1.1rem;
+	padding: .5rem;
+	padding-top: .15rem;
+	background-color: rgb(30,30,30);
+	border-radius: .2rem;
+}
+
+.goal_title {
+	font-family: lato;
+	color: rgb(235,235,235);
+}
+
+#goal_bar_unfilled {
+	background-color: red;
+	overflow: hidden;
+	border-radius: .3rem;
+	width: 100%;
+	height: 2.5rem;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+#goal_bar_filled {
+	height: 100%;
+	width: 0%;
+	background-color: rgb(30, 255, 0);
+	position: relative;
+	z-index: 555;
+}
+
+#goal_number_display {
+	font-family: lato;
+	font-weight: 400;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+	z-index: 999;
+}

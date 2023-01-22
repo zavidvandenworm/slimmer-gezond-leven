@@ -12,7 +12,44 @@
   <h1 class="pagetitle" id="eetmeter_head">
     Eetmeter
   </h1>
-  
+  <div class="goal_card">
+	<span class="goal_title">Calorieën</span>
+	<div id="goal_bar_unfilled">
+		<div id="goal_number_display">
+			<span id="goal_number"></span>
+		</div>
+		<div id="goal_bar_filled">
+		</div>
+	</div>
+  </div>
+
+
+  <div class="goal_card">
+	<span class="goal_title">Ontbijt - </span><span class="goal_title" id="bc_amount">1</span>
+	<div class="add_bar">
+		<input type="number" class="add_bar_input" id="add_bar_input_breakfast" value="0">
+		<button type="button" class="add_bar_submit" id="add_bar_submit_breakfast" onclick="addCalories('breakfast', getElementById('add_bar_input_breakfast').value)">Toev.</button>
+	</div>
+  </div>
+
+  <div class="goal_card">
+	<span class="goal_title">Lunch - </span><span class="goal_title" id="lc_amount">1</span>
+	<div class="add_bar">
+		<input type="number" class="add_bar_input" id="add_bar_input_lunch" value="0">
+		<button type="button" class="add_bar_submit" id="add_bar_submit_lunch" onclick="addCalories('lunch', getElementById('add_bar_input_lunch').value)">Toev.</button>
+	</div>
+  </div>
+
+  <div class="goal_card">
+	<span class="goal_title">Avondeten - </span><span class="goal_title" id="dc_amount">1</span>
+	<div class="add_bar">
+		<input type="number" class="add_bar_input" id="add_bar_input_dinner" value="0">
+		<button type="button" class="add_bar_submit" id="add_bar_submit_dinner" onclick="addCalories('dinner', getElementById('add_bar_input_dinner').value)">Toev.</button>
+	</div>
+  </div>
+
+
+
   <div id="eetmeter_text">
 	  <p id="text_eetmeter_ontbijt">
 		Ontbijt calloriën toevoegen
@@ -39,7 +76,6 @@
 		<tr>
 			<td class="callorienn_input"><input type="number" name="calloriën" class="callorienn_input"></td>
 		</tr>
-
   </div>
 	<p class="totaal">Totale calloriën Ontbijt:<span id="total_breakfast"></span></p>
 	<p class="totaal">Totale calloriën Lunch:<span id="total_lunch"></span></p>
