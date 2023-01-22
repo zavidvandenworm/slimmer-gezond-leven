@@ -3,6 +3,10 @@ body > * {
     font-family: lato;
 }
 
+html {
+    font-size: 16px !important;
+}
+
 #accountform {
     display: flex;
     flex-direction: column;
@@ -70,4 +74,3 @@ body > * {
     padding: .1rem .5rem;
     border-radius: .25rem;
 }
-
