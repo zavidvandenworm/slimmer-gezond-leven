@@ -1,0 +1,53 @@
+
+.divs_ontbijt{
+  display: flex;
+  color: white;
+  font-family: 'Lato', sans-serif;
+  justify-content: center;
+}
+
+#title_gerecht{
+  display: flex;
+  color: rgb(255, 255, 255);
+  font-family: 'Lato', sans-serif;
+  justify-content: center;
+}
+
+#zalm{
+  width: 100%;
+  object-fit: contain;
+  border-radius: 5px;
+}
+
+.text_aankomen{
+  display: flex;
+  color: rgb(0 251 251);
+  font-family: 'Lato', sans-serif;
+  justify-content: center;
+}
+
+#voedingswaarde_title{
+  display: flex;
+  color: rgb(0, 251, 251);
+  font-family: 'Lato', sans-serif;
+  justify-content: center;
+}
+
+#voedingswaardes{
+  display: flex;
+  color: white;
+  font-family: 'Lato', sans-serif;
+
+  justify-content: center;
+}
+#bereiding{
+  color: white;
+  font-family: 'Lato', sans-serif;
+}
+
+#bereiding_title{
+  display: flex;
+  color: rgb(0, 251, 251);
+  font-family: 'Lato', sans-serif;
+  justify-content: center;
+}
