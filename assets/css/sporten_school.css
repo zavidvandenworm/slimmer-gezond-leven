@@ -1,14 +1,13 @@
-#text_sporten1{
+.text_sporten{
   margin-top: 50px;
   display: flex;
-}
-
-
-.text_sportschool{
-	display: flex;
-	color: rgb(0, 251, 251);  
+  justify-content: center;
+  color: rgb(0, 251, 251);  
 	font-family: 'Lato', sans-serif;
 }
+
+
+
 
 
 .inschrijven_button{
@@ -30,14 +29,11 @@
   color: rgb(0 251 251);
   background-color: black;
   cursor: pointer;
+
 }
 
 .inschrijven_button:active{
   opacity: .6;
 }
 
-#text_sportschool{
-  margin-top: 50px;
-  display: flex;
-}
 
