@@ -1,14 +1,9 @@
 .text_sporten{
   margin-top: 50px;
   display: flex;
-  justify-content: center;
   color: rgb(0, 251, 251);  
 	font-family: 'Lato', sans-serif;
 }
-
-
-
-
 
 .inschrijven_button{
   justify-content: center;
@@ -29,7 +24,6 @@
   color: rgb(0 251 251);
   background-color: black;
   cursor: pointer;
-
 }
 
 .inschrijven_button:active{

@@ -1,15 +1,9 @@
-#text_voedingslessen1{
+.text_voedingslessen{
   margin-top: 50px;
   display: flex;
-}
-
-
-.text_vl{
-	display: flex;
-	color: rgb(0, 251, 251);  
+  color: rgb(0, 251, 251);  
 	font-family: 'Lato', sans-serif;
 }
-
 
 .inschrijven_button{
   justify-content: center;
@@ -36,8 +30,5 @@
   opacity: .6;
 }
 
-#text_voedingslessen2{
-  margin-top: 50px;
-  display: flex;
-}
+
 
