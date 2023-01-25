@@ -8,6 +8,7 @@ Object.prototype.removeItem = function (key) {
 };
 
 let b_friend_search = document.getElementById("zoek_vrienden");
+let b_friend_search_close = document.getElementById("b_search_friend_close");
 
 let friend_list_html = document.getElementById("friend_list");
 let pending_friends_html = document.getElementById("pending_list");
@@ -51,7 +52,11 @@ function updateGUI() {
 	my_friends_html.InnerHTML = "";
 	
 	for(i in friends){
-		friend_list_html
+		let friend_template = document.getElementById("friend_entry_template").cloneNode(true);
+		console.log(i);
+		let x = friend_template.getElementsByClassName("friend_entry_fill");
+		friend_template.getElementsByClassName("friend_entry_fill");
+		friend_list_html.appendChild(friend_template);
 	}
 }
 
@@ -73,3 +78,12 @@ function acceptFriendsPlacebo() {
 }
 
 setInterval(acceptFriendsPlacebo, 4500);
+
+b_friend_search.onclick = function() {
+	document.getElementById("friend_search_popup").style.visibility = "visible";
+	updateGUI();
+}
+
+b_search_friend_close.onclick = function() {
+	document.getElementById("friend_search_popup").style.visibility = "none";
+}
