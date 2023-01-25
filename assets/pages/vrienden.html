@@ -1,41 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/global.css">
-    <link rel="stylesheet" href="../css/vrienden.css">
-    <title>Vrienden</title>
-</head>
-<body>
-    
-    <h1 class="pagetitle" id="vrienden_head">Vrienden</h1>
-    
-    <div id="vrienden_div1">
-        
-        <button class="buttons_vrienden" id="zoek_vrienden">
-            Zoek vrienden
-        </button>
-     </div>
-    
-     <div id="vrienden_div2">
-        <button class="buttons_vrienden" id="Nieuwe groep">
-            Nieuwe groep
-        </button>
-    </div>
 
-	<div id="friend_search_popup">
-		<div id="friend_list">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/global.css">
+	<link rel="stylesheet" href="../css/vrienden.css">
+	<title>Vrienden</title>
+</head>
+
+<body>
+
+	<h1 class="pagetitle">Vrienden</h1>
+	<div class="page-container">
+		<div id="friend_search">
+			<span class="friend_category_title">Jouw vrienden</span>
+			<div id="friend_list" class="friend_container">
+			</div>
+			<span class="friend_category_title">Aangevraagd</span>
+			<div id="pending_list" class="friend_container">
+			</div>
+			<span class="friend_category_title">Voeg toe</span>
+			<div id="my_friends_list" class="friend_container">
+			</div>
 		</div>
-		<div id="pending_list">
-		</div>
-		<div id="my_friends_list">
-		</div>
-		<button id="b_search_friend_close">Terug</button>
 	</div>
-	
-	
+
 	<template id="friend_entry_template">
 		<div class="friend-entry">
 			<div class="friend-entry-pfp-name-username">
@@ -52,6 +43,7 @@
 		</div>
 	</template>
 </body>
+
 </html>
 
 <script src="../javascript/vrienden.js"></script>

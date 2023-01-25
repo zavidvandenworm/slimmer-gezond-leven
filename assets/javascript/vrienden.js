@@ -7,12 +7,11 @@ Object.prototype.removeItem = function (key) {
       this.splice(key, 1)
 };
 
-let b_friend_search = document.getElementById("zoek_vrienden");
-let b_friend_search_close = document.getElementById("b_search_friend_close");
-
 let friend_list_html = document.getElementById("friend_list");
 let pending_friends_html = document.getElementById("pending_list");
 let my_friends_html = document.getElementById("my_friends_list");
+
+let friend_template = document.querySelector("#friend_entry_template");
 
 let friends = {
 	"zavid": {
@@ -52,11 +51,10 @@ function updateGUI() {
 	my_friends_html.InnerHTML = "";
 	
 	for(i in friends){
-		let friend_template = document.getElementById("friend_entry_template").cloneNode(true);
-		console.log(i);
+		let clone = friend_template.content.firstElementChild.cloneNode(true);
 		let x = friend_template.getElementsByClassName("friend_entry_fill");
 		friend_template.getElementsByClassName("friend_entry_fill");
-		friend_list_html.appendChild(friend_template);
+		friend_list_html.appendChild(clone);
 	}
 }
 
@@ -79,11 +77,4 @@ function acceptFriendsPlacebo() {
 
 setInterval(acceptFriendsPlacebo, 4500);
 
-b_friend_search.onclick = function() {
-	document.getElementById("friend_search_popup").style.visibility = "visible";
-	updateGUI();
-}
-
-b_search_friend_close.onclick = function() {
-	document.getElementById("friend_search_popup").style.visibility = "none";
-}
+updateGUI();
