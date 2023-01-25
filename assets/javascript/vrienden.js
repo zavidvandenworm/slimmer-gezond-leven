@@ -7,6 +7,8 @@ Object.prototype.removeItem = function (key) {
       this.splice(key, 1)
 };
 
+let b_friend_search = document.getElementById("zoek_vrienden");
+
 let friend_list_html = document.getElementById("friend_list");
 let pending_friends_html = document.getElementById("pending_list");
 let my_friends_html = document.getElementById("my_friends_list");
@@ -44,6 +46,13 @@ let my_friends = [];
 
 function updateGUI() {
 	
+	friend_list_html.innerHTML = "";
+	pending_friends_html.innerHTML = "";
+	my_friends_html.InnerHTML = "";
+	
+	for(i in friends){
+		friend_list_html
+	}
 }
 
 function addFriend(friend_name) {
@@ -56,6 +65,7 @@ function addFriend(friend_name) {
 }
 
 function acceptFriendsPlacebo() {
+	console.log("friend placebo");
 	for(i in pending_friends){
 		my_friends.push(pending_friends[i]);
 		pending_friends.removeItem(i);
