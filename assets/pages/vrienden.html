@@ -24,14 +24,33 @@
             Nieuwe groep
         </button>
     </div>
+
+	<div id="friend_search_popup">
+		<div id="friend_list">
+		</div>
+		<div id="pending_list">
+		</div>
+		<div id="my_friends_list">
+		</div>
+	</div>
 	
-	<div id="friend_list">
-	</div>
-	<div id="pending_list">
-	</div>
-	<div id="my_friends_list">
-	</div>
 	
-   
+	<template id="friend_entry_template">
+		<div class="friend-entry">
+			<div class="friend-entry-pfp-name-username">
+				<img class="friend-entry-pfp">
+				<div class="friend-entry-name-username">
+					<span class="friend-entry-name"></span>
+					<span class="friend-entry-username"></span>
+				</div>
+			</div>
+			<div class="friend-entry-score-joindate">
+				<span class="friend-entry-score-badge"></span>
+				<span class="friend-entry-joindate"></span>
+			</div>
+		</div>
+	</template>
 </body>
 </html>
+
+<script src="../javascript/vrienden.js"></script>
