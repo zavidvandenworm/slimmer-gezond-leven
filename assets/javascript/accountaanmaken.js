@@ -37,11 +37,11 @@ document.getElementById("quick-fill").onclick = function() {
     var googla = Array.from(form.elements);
     googla[0].value = "Graaf Huyn";
     googla[1].value = "GH123";
-    googla[2].value = "Naam";
+    googla[2].value = "Maik";
     googla[3].value = "2004-11-03";
     googla[4].value = "Man";
-    googla[5].value = "75";
+    googla[5].value = "68";
     googla[6].value = "Middel";
-    googla[7].value = "70";
-    googla[8].value = "3000";
+    googla[7].value = "80";
+    googla[8].value = "3169";
 }
