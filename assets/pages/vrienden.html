@@ -15,31 +15,35 @@
 	<h1 class="pagetitle">Vrienden</h1>
 	<div class="page-container">
 		<div id="friend_search">
-			<span class="friend_category_title">Jouw vrienden</span>
-			<div id="friend_list" class="friend_container">
+			<span class="friend_category_title">Mijn vrienden</span>
+			<div id="my_friends_list" class="friend_container">
 			</div>
 			<span class="friend_category_title">Aangevraagd</span>
 			<div id="pending_list" class="friend_container">
 			</div>
 			<span class="friend_category_title">Voeg toe</span>
-			<div id="my_friends_list" class="friend_container">
+			<div class="friend-search-dummy">
+				<input type="text" placeholder="Zoek naar vrienden...">
+				<button type="button">Zoek</button>
 			</div>
+			<div id="friend_list" class="friend_container">
+			</div>
+
 		</div>
 	</div>
 
 	<template id="friend_entry_template">
 		<div class="friend-entry">
-			<div class="friend-entry-pfp-name-username">
-				<img class="friend-entry-pfp friend_entry_fill">
-				<div class="friend-entry-name-username">
-					<span class="friend-entry-name friend_entry_fill"></span>
-					<span class="friend-entry-username friend_entry_fill"></span>
+				<img class="friend-entry-pfp friend_entry_fill" src="https://picsum.photos/64">
+				<div class="friend-entry-info">
+					<div class="friend-entry-name-score">
+						<span class="friend-entry-name friend_entry_fill">googla ghogla</span>
+						<span class="friend-entry-score-badge friend_entry_fill">123</span>
+					</div>
+					<span class="friend-entry-username friend_entry_fill">goglals</span>
+					<span class="friend-entry-joindate friend_entry_fill">12-02-2022</span>
 				</div>
-			</div>
-			<div class="friend-entry-score-joindate">
-				<span class="friend-entry-score-badge friend_entry_fill"></span>
-				<span class="friend-entry-joindate friend_entry_fill"></span>
-			</div>
+				<button class="friend-entry-add friend_entry_fill"></button>
 		</div>
 	</template>
 </body>
