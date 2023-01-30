@@ -1,56 +1,61 @@
-#buttons_recepten1{
-  display: flex;
-  justify-content: center;;
-  margin-top: 100px;
+html > * {
+  box-sizing: border-box;
 }
-#buttons_recepten2{
+
+.tile-list {
+  box-sizing: border-box;
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
   justify-content: center;
-  margin-top: 120px;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
 }
-#buttons_recepten3{
+
+.tile-list button {
+  z-index: 99;
   display: flex;
+  position: relative;
+  width: 45%;
+  height: 10rem;
+  margin: .2rem;
+  display: flex;
+  align-items: center;
   justify-content: center;
-  margin-top: 120px;
-}
- 
-#recepten_head{
-  color: rgb(0 251 251);
-}
-
-
-
-.recepten_buttons{
-  height: 35px;
-  color: black;
-  background-color: rgb(0 251 251);
-  border-radius: 25px;
-  border-width: 1px;
-  font-family: 'Lato', sans-serif;
-  font-weight: bold;
-  padding-left: 8.5px;
-  padding-right: 8.5px;
-  width: 83px;
-}
-
-.recepten_buttons:hover{
-  color: rgb(0 251 251);
-  background-color: black;
+  font-size: 1.1rem;
+  overflow: hidden;
+  border: solid .1rem rgba(0,0,0,0.55);
+  border-radius: .12rem;
   cursor: pointer;
 }
 
-.recepten_buttons:active{
-  opacity: .6;
+.tile-list button span {
+  z-index: 101;
+  color: whitesmoke;
+  font-family: lato;
+  font-weight: 500;
+  filter: drop-shadow(2px 4px 6px black);
+  font-size: 1.3rem;
+  transition: font-size 100ms;
 }
 
-#ontbijt_button{
-  margin-right: 35px;
+.tile-list button:hover span {
+  font-size: 1.4rem;
 }
 
-#avond_eten_button{
-  margin-right: 35px;
+.recipe-image {
+  z-index: 100;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(0.6) brightness(1) blur(.15rem);
+  transition: transform 200ms, filter 200ms;
 }
 
-#desserts_button{
-  margin-right: 35px;
+.tile-list button:hover .recipe-image {
+  transform: scale(1.1);
+  filter: saturate(1) brightness(1) blur(.07rem);
 }
