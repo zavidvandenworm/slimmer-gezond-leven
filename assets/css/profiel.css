@@ -1,10 +1,13 @@
-#profile-card {
+.segment {
     display: flex;
     box-sizing: border-box;
+    flex-direction: column;
     margin: .5rem;
     padding: .5rem;
     border-radius: .7rem;
-    background-color: rgba(255,255,255,0.3);
+    color: whitesmoke;
+    font-family: lato;
+    background-color: rgba(255, 255, 255, 0.144);
 }
 
 #profile-card-pfp {
@@ -15,6 +18,7 @@
     background-color: gray;
     border: none !important;
     outline: none !important;
+    filter: drop-shadow(.1rem .1rem .7rem rgba(255,255,255,0.1));
 }
 
 #name-join {
@@ -28,12 +32,39 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    font-weight: lighter;
 }
 
-#pfp-name #name-join b {
+#user_name_display {
     font-family: 'Lato', sans-serif;
+    color: whitesmoke;
+}
+
+#user_username_display {
+    font-family: 'Lato', sans-serif;
+    color: rgb(196, 196, 196);
+    font-size: .8rem;
+}
+
+#user_username_display::before {
+    content: "@";
 }
 
 #pfp-name #name-join small {
     font-family: 'Lato', sans-serif;
+    color: lightblue;
+    font-size: .7rem;
+}
+
+.stat-table {
+    margin-top: .3rem;
+}
+
+.stat-table tr:nth-child(2n) {
+    background-color: rgba(255,255,255,0.1);
+}
+
+.stat-table td {
+    font-family: lato;
+    font-size: .8rem;
 }

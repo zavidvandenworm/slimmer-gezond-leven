@@ -10,18 +10,41 @@
 </head>
 <body>
     <h1 class="pagetitle" id="profiel_head">Profiel</h1>
+    <div class="score">
+        <span id="score-value"></span>
+      </div>
     <div class="segment" id="profile-card">
         <div id="pfp-name">
-            <img id="profile-card-pfp" src="../image/blank.gif">
+            <img id="profile-card-pfp" src="https://picsum.photos/64?r=4">
             <div id="name-join">
-                <b id="user_name_display">Voorbeeld Naam</b>
+                <span id="user_name_display">Voorbeeld Naam</span>
+                <span id="user_username_display">Voorbeeld Naam</span>
                 <small>Lid sinds <span id="user_joindate_display"></span></small>
             </div>
         </div>
+        <table class="stat-table">
+            <tr>
+                <td>Geslacht</td>
+                <td>Man</td>
+            </tr>
+            <tr>
+                <td>Gewicht</td>
+                <td>85kg</td>
+            </tr>
+            <tr>
+                <td>Geboortedatum</td>
+                <td>12-12-2001</td>
+            </tr>
+            <tr>
+                <td>Trainingsintensiteit</td>
+                <td>Middel</td>
+            </tr>
+        </table>
     </div>
-    <form>
-        <input type="text" placeholder="">
-    </form>
+    <div class="segment" id="stat-card">
+        <span class="segment-title">Doelen</span>
+    </div>
+
 </body>
 </html>
 
