@@ -1,30 +1,115 @@
-#vrienden_div1{
-  display: flex;
-  justify-content: center;
-  margin-top: 5rem;
-  margin-bottom: 2rem;
+.page-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	width: 100%;
+	height: 100%;
 }
 
-#vrienden_div2{
-  display: flex;
-  justify-content: center;
+#friend_search {
+	display: flex;
+	flex-direction: column;
+	width: 20rem;
+	height: 100%;
+	background-color: aqua;
 }
 
-.buttons_vrienden{
-  height: 35px;
-  color: black;
-  background-color: rgb(0 251 251);
-  border-radius: 25px;
-  border-width: 1px;
-  font-family: 'Lato', sans-serif;
-  font-weight: bold;
-  padding-left: 8.5px;
-  padding-right: 8.5px;
-  width: 150px;
+.friend-container {
+	display: flex;
+    flex-direction: column;
 }
 
-.buttons_vrienden:hover{
-  color: rgb(0 251 251);
-  background-color: black;
-  cursor: pointer;
+.friend_category_title {
+	z-index: 899;
+	display: block;
+	text-align: center;
+	font-family: lato;
+	font-size: 1.2rem;
+	font-weight: 200;
+	padding: .2rem;
+	box-shadow: .2rem .2rem 1rem rgba(0,0,0,0.25);
+}
+
+.friend-search-dummy {
+	font-family: lato;
+	margin-top: .25rem;
+	margin-bottom: 0;
+	display: flex;
+	width: 100%;
+}
+
+.friend-search-dummy input {
+	font-family: lato;
+	padding: .35rem;
+	flex: 2;
+}
+
+.friend-search-dummy button {
+	font-family: lato;
+	flex: 0.5;
+}
+
+/* friend entry template */
+
+.friend-entry {
+	font-family: lato;
+	display: flex;
+	flex-direction: row;
+	padding: .2rem;
+	background-color: beige;
+	height: 5rem;
+}
+/* ----------- */
+
+.friend-entry-info {
+	display: flex;
+	flex: 2.6;
+	flex-direction: column;
+}
+
+.friend-entry-pfp {
+	display: block;
+	width: 5rem;
+	margin-right: .2rem;
+	border-radius: 50%;
+}
+
+.friend-entry-name {
+	display: inline-block;
+	font-weight: 200;
+}
+
+.friend-entry-score-badge {
+	background-color: rgb(255, 166, 0);
+	color: white;
+	border-radius: .4rem;
+	padding: .2rem;
+	font-weight: bold;
+	font-size: .8rem;
+}
+
+.friend-entry-name-score {
+	display: block;
+}
+
+.friend-entry-username {
+	color: rgb(70,70,70);
+}
+
+.friend-entry-username:before {
+	content: "@";
+}
+
+.friend-entry-joindate {
+	display: block;
+	margin-top: auto;
+}
+
+.friend-entry-joindate:before {
+	content: "Lid sinds ";
+} 
+
+.friend-entry-add {
+	display: block;
 }

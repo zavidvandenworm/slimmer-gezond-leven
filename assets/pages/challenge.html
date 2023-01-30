@@ -9,8 +9,38 @@
   <title>Challenge</title>
 </head>
 <body>
-  <h1 class="pagetitle" id="challenge_head">
-    Challenge
+  <h1 class="pagetitle" id="eetmeter_head">
+    Challenges
   </h1>
+
+  <div class="score">
+    <span id="score-value"></span>
+  </div>
+  
+  <div class="challenge-list">
+    <div class="challenge-entry" id="c_calories" style="--progress: 34%;--total:1000">
+      <span class="challenge-name">Verbrand 1000 calorieën</span>
+      <div class="challenge-info">
+        <div class="challenge-progress-outer">
+          <span class="challenge-percentage">340/1000</span>
+          <div class="challenge-progress-inner"></div>
+        </div>
+        <button disabled>+25</button>
+      </div>
+    </div>
+
+    <div class="challenge-entry" id="c_activities" style="--progress: 100%;--total:1000">
+      <span class="challenge-name">Voltooi 3 activiteiten</span>
+      <div class="challenge-info">
+        <div class="challenge-progress-outer">
+          <span class="challenge-percentage">3/3</span>
+          <div class="challenge-progress-inner"></div>
+        </div>
+        <button onclick="claimChallenge('activities', 25)">+15</button>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
+
+<script src="../javascript/challenge.js"></script>
