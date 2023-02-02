@@ -2,12 +2,21 @@ html > * {
   box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
 .tile-list {
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  align-items: center;
   justify-content: center;
   width: 100%;
   height: 100%;
@@ -19,14 +28,13 @@ html > * {
   display: flex;
   position: relative;
   width: 45%;
-  height: 10rem;
-  margin: .2rem;
+  margin: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.1rem;
   overflow: hidden;
-  border: solid .1rem rgba(0,0,0,0.55);
+  border: none;
   border-radius: .12rem;
   cursor: pointer;
 }
@@ -36,13 +44,15 @@ html > * {
   color: whitesmoke;
   font-family: lato;
   font-weight: 500;
-  filter: drop-shadow(2px 4px 6px black);
+  filter: drop-shadow(0 0 1rem black);
   font-size: 1.3rem;
-  transition: font-size 100ms;
+  background-color: rgba(0,0,0,0);
+  border-radius: .2rem;
+  transition: font-size 100ms, transform 200ms, background-color 200ms;
 }
 
 .tile-list button:hover span {
-  font-size: 1.4rem;
+  transform: scale(1.2);
 }
 
 .recipe-image {
@@ -51,11 +61,12 @@ html > * {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: saturate(0.6) brightness(1) blur(.15rem);
+  filter: saturate(0.6) brightness(.6);
+  transform: scale(1.05);
   transition: transform 200ms, filter 200ms;
 }
 
 .tile-list button:hover .recipe-image {
   transform: scale(1.1);
-  filter: saturate(1) brightness(1) blur(.07rem);
+  filter: saturate(1) brightness(.8);
 }
