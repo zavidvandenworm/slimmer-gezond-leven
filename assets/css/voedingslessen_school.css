@@ -1,34 +1,26 @@
-.text_voedingslessen{
-  margin-top: 50px;
-  display: flex;
-  color: rgb(0, 251, 251);  
-	font-family: 'Lato', sans-serif;
+.table {
+  font-family: lato;
+  color: rgb(245,245,245);
+  background-color: rgba(255,255,255,0.1);
+  text-align: center;
+  font-size: 1.1rem;
+  margin: auto;
+  width: 100%;
 }
 
-.inschrijven_button{
-  justify-content: center;
-  height: 35px;
-  color: black;
-  background-color: rgb(0 251 251);
-  border-radius: 25px;
-  border-width: 1px;
-  font-family: 'Lato', sans-serif;
-  font-weight: bold;
-  padding-left: 8.5px;
-  padding-right: 8.5px;
-  width: 83px;
-  margin-top: 20px;
+.trs {
+  background-color: aqua;
 }
 
-.inschrijven_button:hover{
-  color: rgb(0 251 251);
-  background-color: black;
+.trs:nth-child(n) {
+  background-color: rgba(255,255,255,0.1);
+}
+
+.signup {
+  background-color: transparent;
+  border: none;
+  border-radius: 0.1rem;
   cursor: pointer;
+  padding: 0.1rem;
+  color: whitesmoke;
 }
-
-.inschrijven_button:active{
-  opacity: .6;
-}
-
-
-
