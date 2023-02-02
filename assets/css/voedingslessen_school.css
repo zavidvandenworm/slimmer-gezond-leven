@@ -1,7 +1,7 @@
 .table {
   font-family: lato;
   color: rgb(245,245,245);
-  background-color: rgba(255,255,255,0.1);
+  background-color: rgba(255,255,255,0.0);
   text-align: center;
   font-size: 1.1rem;
   margin: auto;
@@ -12,8 +12,14 @@
   background-color: aqua;
 }
 
-.trs:nth-child(n) {
+.table tr:nth-child(n) {
   background-color: rgba(255,255,255,0.1);
+}
+
+.table tr:nth-child(1) > td, th {
+  padding: .3rem;
+  margin: 0;
+  border: none;
 }
 
 .signup {
