@@ -1,8 +1,7 @@
 let total_breakfast = document.getElementById("bc_amount");
 let total_lunch = document.getElementById("lc_amount");
 let total_dinner = document.getElementById("dc_amount");
-let total_snacks = document.getElementById("total_snacks");
-let total_calories = document.getElementById("total_calories");
+let total_snacks = document.getElementById("sn_amount");
 let calorie_goal_bar = document.getElementById("goal_bar_filled");
 let goal_number = document.getElementById("goal_number");
 
@@ -23,7 +22,6 @@ function updateDisplay() {
     total_lunch.innerHTML = localStorage.getItem("sgl_calories_lunch");
     total_dinner.innerHTML = localStorage.getItem("sgl_calories_dinner");
     total_snacks.innerHTML = localStorage.getItem("sgl_calories_snacks");
-    total_calories.innerHTML = total;
     goal_number.innerHTML = total + "/" + localStorage.getItem("sgl_dailycalories");
     calorie_goal_bar.style.width = (total / parseInt(localStorage.getItem("sgl_dailycalories")))*100 + "%";
 }
@@ -46,8 +44,8 @@ function addCalories(type, amount) {
 
             break;
         case "snack":
-            localStorage.setItem("sgl_calories_snack", 
-            parseInt(localStorage.getItem("sgl_calories_snack"))+parseInt(amount));
+            localStorage.setItem("sgl_calories_snacks", 
+            parseInt(localStorage.getItem("sgl_calories_snacks"))+parseInt(amount));
 
             break;
     }

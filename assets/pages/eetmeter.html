@@ -48,16 +48,13 @@
 	</div>
   </div>
 
-
-
-
-	
-	<p class="totaal">Totale calloriën Ontbijt:<span id="total_breakfast"></span></p>
-	<p class="totaal">Totale calloriën Lunch:<span id="total_lunch"></span></p>
-	<p class="totaal">Totale calloriën Avond eten:<span id="total_dinner"></span></p>
-	<p class="totaal">Totale calloriën Snacks:<span id="total_snacks"></span></p>
-	<p class="totaal" id="totale_callorien">Totale calloriën Vandaag:<span id="total_calories"></span></p>
-
+  <div class="goal_card">
+	<span class="goal_title">Snacks - </span><span class="goal_title" id="sn_amount">1</span>
+	<div class="add_bar">
+		<input type="number" class="add_bar_input" id="add_bar_input_snack" value="0">
+		<button type="button" class="add_bar_submit" id="add_bar_submit_snack" onclick="addCalories('snack', getElementById('add_bar_input_snack').value)">Toev.</button>
+	</div>
+  </div>
 </body>
 </html>
 <script src="../javascript/eetmeter.js"></script>
