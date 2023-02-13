@@ -11,7 +11,7 @@
 <body>
   <h1 class="pagetitle">Recepten</h1>
   <div class="tile-list">
-    <button id="ontbijt" onclick="gotoRecipe('ontbijt')">
+    <button id="ontbijt">
       <span>Ontbijt</span>
       <img class="recipe-image" src="https://images.immediate.co.uk/production/volatile/sites/30/2017/08/smoothie-bowl-3a8632c.jpg?quality=90&resize=556,505">
     </button>
@@ -19,7 +19,7 @@
       <span>Lunch</span>
       <img class="recipe-image" src="https://www.lekkerensimpel.com/wp-content/uploads/2022/12/588A0465-720x400.jpg">
     </button>
-    <button id="avondeten">
+    <button id="avondeten" onclick="gotoRecipe('ontbijt')">
       <span>Avondeten</span>
       <img class="recipe-image" src="https://beaufood.nl/wp-content/uploads/2020/06/Eenpansgerecht-met-groenten-falafel-en-feta-3.jpg">
     </button>
